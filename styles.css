@@ -1,0 +1,244 @@
+/* Basic styling for the body and container */
+body,
+html {
+    margin: 0;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Ensure the background stays behind the content */
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the container without distortion */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+/* LOGO */
+.logo {
+    /* Replace this with your desired font */
+    font-size: 80px;
+    color: white;
+    text-align: right;
+}
+
+.logo span {
+    display: block;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.logo i {
+    font-size: 0.3em;
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+
+.social-icons {
+    display: flex;
+    gap: 30px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ffcc00;
+}
+
+
+
+
+/* Language Selector styling */
+.language-selector {
+    display: flex;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.language-selector i.fas.fa-globe {
+    font-size: 25px;
+}
+
+.language-selector select {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.language-selector select option {
+    background-color: white;
+    color: black;
+}
+
+.language-selector span {
+    color: white;
+    font-size: 12px;
+}
+
+/* Optional hover effects */
+.language-selector:hover,
+.language-selector:hover select,
+.language-selector:hover span {
+    color: #ffcc00;
+    /* Change text color on hover */
+}
+
+
+
+
+
+
+
+
+/* Align the menu to the left */
+.content {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    height: 100%;
+}
+
+.menu {
+    text-align: left;
+    width: 26%;
+    /* Replace this with the correct font */
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menu ul li {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 0px;
+    letter-spacing: 1px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* Line under each item */
+.menu ul li::before {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: rgb(247, 247, 247);
+    position: absolute;
+    bottom: -10px;
+    /* Adjust this value to move the line lower */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Line for all items except the last one */
+.menu ul li:not(:last-child)::before {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: rgb(247, 247, 247);
+    position: absolute;
+    bottom: -10px;
+    /* Adjust this value to move the line lower */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.menu ul li.active {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px 10px;
+    color: #5e5353;
+    text-align: center;
+    /* Adjust this for the highlighted text color */
+}
+
+.menu ul li:hover {
+    cursor: pointer;
+    background-color: rgb(247, 247, 247);
+    color: black;
+}
+
+
+
+
+/* Scroll down icon at the bottom */
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 24px;
+}
+
+.scroll-down span {
+    cursor: pointer;
+    animation: bounce 1.5s infinite;
+}
+
+.scroll-down i {
+    font-size: 3rem;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
