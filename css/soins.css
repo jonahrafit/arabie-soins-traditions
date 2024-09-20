@@ -1,0 +1,289 @@
+body,
+html {
+    margin: 0;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@font-face {
+    font-family: 'Matura MT Script Capitals';
+    src: url('../fonts/MATURASC_1.TTF') format('truetype');
+}
+
+.logo {
+    font-family: 'Matura MT Script Capitals', sans-serif;
+    /* Apply the font */
+    font-size: 2rem;
+    color: rgb(75, 57, 57);
+    text-align: left;
+    /* Change from right to left */
+}
+
+.logo i {
+    font-size: 0.3em;
+    vertical-align: top;
+    display: inline-block;
+    align-self: flex-start;
+    position: relative;
+}
+
+
+.panier_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px; /* Reduced padding */
+    font-family: Arial, sans-serif;
+    gap: 20px; /* Add gap between panier and menu */
+}
+
+.panier {
+    display: flex;
+}
+
+.panier p {
+    margin: 0;
+    margin-right: 8px;
+    font-size: 16px;
+    color: rgb(75, 57, 57);
+}
+
+.panier i {
+    font-size: 20px;
+    color: rgb(75, 57, 57);
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-right: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(75, 57, 57);
+}
+
+.menu ul li a:hover {
+    text-decoration: none;
+}
+
+hr {
+    margin-top: 10px;
+    border: 0;
+    border-top: 1px solid rgb(75, 57, 57); /* Adjust thickness and color */
+}
+
+
+
+
+
+
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Reduced gap */
+    justify-content: flex-end; /* Align to the right */
+}
+.social-icons a {
+    color: rgb(75, 57, 57);
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ffcc00;
+}
+
+/* Language Selector styling */
+.language-selector {
+    display: flex;
+    align-items: center;
+    color: rgb(75, 57, 57);
+    cursor: pointer;
+    gap: 5px;
+}
+
+.language-selector i.fas.fa-globe {
+    font-size: 25px;
+}
+
+.language-selector select {
+    background-color: transparent;
+    color: rgb(75, 57, 57);
+    border: none;
+    font-size: 16px;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.language-selector select option {
+    background-color: rgb(75, 57, 57);
+    color: black;
+}
+
+.language-selector span {
+    color: rgb(75, 57, 57);
+    font-size: 12px;
+    margin-left: 5px; /* Add space between select and the arrow */
+}
+
+/* Optional hover effects */
+.language-selector:hover,
+.language-selector:hover select,
+.language-selector:hover span {
+    color: #ffcc00;
+    /* Change text color on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Centre le texte horizontalement */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Cooper BT Black", sans-serif;
+    /* Espacement entre le titre et le paragraphe */
+}
+
+@font-face {
+    font-family: 'Cooper BT Black';
+    src: url('../fonts/COOPBL.TTF') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Cooper BT Black', sans-serif;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+    max-width: 78%;
+    /* Limite la largeur du paragraphe pour une meilleure lisibilité */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* LIST */
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+}
+
+.icon {
+    font-size: 40px;
+    background-color: white;
+    color: #4caf50;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.info-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
