@@ -1,10 +1,32 @@
+@font-face {
+    font-family: 'Matura MT Script Capitals';
+    src: url('../fonts/MATURASC_1.TTF') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cooper BT Black';
+    src: url('../fonts/COOPBL.TTF') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('../fonts/myriad-pro-semiextended.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Base styling */
 body,
 html {
     margin: 0;
-    padding: 0px;
+    padding: 0;
     font-family: Arial, sans-serif;
     height: 100%;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .container {
@@ -16,65 +38,53 @@ html {
     box-sizing: border-box;
 }
 
-
-
-
-
-
-
-
+/* Header and logo styling */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-@font-face {
-    font-family: 'Matura MT Script Capitals';
-    src: url('../fonts/MATURASC_1.TTF') format('truetype');
+    padding: 20px;
 }
 
 .logo {
     font-family: 'Matura MT Script Capitals', sans-serif;
-    /* Apply the font */
     font-size: 2rem;
-    color: rgb(75, 57, 57);
+    color: #5c3e29;
     text-align: left;
-    /* Change from right to left */
 }
 
 .logo i {
     font-size: 0.3em;
     vertical-align: top;
     display: inline-block;
-    align-self: flex-start;
     position: relative;
 }
-
 
 .panier_menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0px; /* Reduced padding */
+    padding: 10px 0;
     font-family: Arial, sans-serif;
-    gap: 20px; /* Add gap between panier and menu */
+    gap: 20px;
+    border-bottom: 2px solid #5c3e29;
 }
 
 .panier {
     display: flex;
+    align-items: center;
 }
 
 .panier p {
     margin: 0;
     margin-right: 8px;
-    font-size: 16px;
-    color: rgb(75, 57, 57);
+    font-size: 13px;
+    color: #5c3e29;
 }
 
 .panier i {
     font-size: 20px;
-    color: rgb(75, 57, 57);
+    color: #5c3e29;
 }
 
 .menu ul {
@@ -85,53 +95,48 @@ html {
 }
 
 .menu ul li {
-    margin-right: 15px;
+    margin: 0 10px;
+}
+
+.menu ul li::after {
+    content: '|';
+    margin-left: 10px;
+}
+
+.menu ul li:last-child::after {
+    content: '';
 }
 
 .menu ul li a {
     text-decoration: none;
-    font-size: 16px;
-    color: rgb(75, 57, 57);
+    font-family: 'MyriadPro', sans-serif;
+    font-size: 13px;
+    color: #5c3e29;
 }
 
-.menu ul li a:hover {
-    text-decoration: none;
-}
-
-hr {
-    margin-top: 10px;
-    border: 0;
-    border-top: 1px solid rgb(75, 57, 57); /* Adjust thickness and color */
-}
-
-
-
-
-
-
-
+/* Social Icons */
 .social-icons {
     display: flex;
-    gap: 15px; /* Reduced gap */
-    justify-content: flex-end; /* Align to the right */
+    gap: 10px;
+    justify-content: flex-end;
 }
+
 .social-icons a {
-    color: rgb(75, 57, 57);
-    font-size: 24px;
+    color: #5c3e29;
+    font-size: 20px;
     text-decoration: none;
 }
 
 .social-icons a:hover {
-    color: #ffcc00;
+    color: #080701;
 }
 
-/* Language Selector styling */
 .language-selector {
     display: flex;
     align-items: center;
-    color: rgb(75, 57, 57);
+    color: #5c3e29;
     cursor: pointer;
-    gap: 5px;
+    gap: 1px;
 }
 
 .language-selector i.fas.fa-globe {
@@ -140,120 +145,55 @@ hr {
 
 .language-selector select {
     background-color: transparent;
-    color: rgb(75, 57, 57);
+    color: #5c3e29;
     border: none;
     font-size: 16px;
     outline: none;
     appearance: none;
-    cursor: pointer;
-    text-align: center;
 }
 
 .language-selector select option {
-    background-color: rgb(75, 57, 57);
+    background-color: #5c3e29;
     color: black;
 }
 
-.language-selector span {
-    color: rgb(75, 57, 57);
-    font-size: 12px;
-    margin-left: 5px; /* Add space between select and the arrow */
-}
-
-/* Optional hover effects */
-.language-selector:hover,
-.language-selector:hover select,
-.language-selector:hover span {
-    color: #ffcc00;
-    /* Change text color on hover */
-}
-
-
-
-
-
-
-
-
-
-
-
-/* Centre le texte horizontalement */
+/* Main content */
 .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-h1 {
-    font-size: 36px;
     text-align: center;
-    margin-bottom: 10px;
-    font-family: "Cooper BT Black", sans-serif;
-    /* Espacement entre le titre et le paragraphe */
-}
-
-@font-face {
-    font-family: 'Cooper BT Black';
-    src: url('../fonts/COOPBL.TTF') format('woff2');
-    font-weight: normal;
-    font-style: normal;
 }
 
 h1 {
     font-size: 3rem;
-    text-align: center;
     margin-bottom: 10px;
     font-family: 'Cooper BT Black', sans-serif;
+    color: #5c3e29;
 }
 
 p {
-    font-size: 18px;
-    text-align: center;
+    font-size: 15px;
     max-width: 78%;
-    /* Limite la largeur du paragraphe pour une meilleure lisibilité */
+    color: #5c3e29;
+    font-family: 'MyriadPro', sans-serif;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* LIST */
+/* Cards styling */
 .list {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .card {
-    background-color: #4caf50;
     color: white;
-    padding: 20px;
+    padding: 50px 20px;
     border-radius: 10px;
     text-align: center;
-    width: 200px;
+    width: calc(25% - 20px);
     position: relative;
     font-family: 'Arial', sans-serif;
 }
@@ -261,29 +201,87 @@ p {
 .icon {
     font-size: 40px;
     background-color: white;
-    color: #4caf50;
+    color: inherit;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 10px;
-}
-
-h2 {
-    font-size: 18px;
-    margin: 10px 0;
+    margin: 0 auto 20px;
 }
 
 .info-btn {
     background-color: transparent;
     border: 2px solid white;
-    padding: 10px 20px;
-    border-radius: 25px;
+    padding: 0px 20px;
+    border-radius: 10px;
     color: white;
-    font-size: 16px;
-    margin-top: 10px;
+    font-size: 1rem;
+    margin-top: 20px;
     cursor: pointer;
-    text-transform: uppercase;
+}
+
+.info-btn:hover {
+    background-color: white;
+    color: #5c3e29;
+}
+
+/* Responsive styling for mobile */
+@media only screen and (max-width: 767px) {
+
+    /* Stack header elements vertically */
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .panier_menu {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        border-bottom: none;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .menu ul li {
+        margin: 0;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    /* Responsive content */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 14px;
+        max-width: 90%;
+    }
+
+    /* Stack cards in a column */
+    .list {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 20px;
+    }
 }
