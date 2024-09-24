@@ -43,7 +43,10 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 0px 20px;
+    width: 100%;
+    gap: 10px;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -51,12 +54,13 @@ html {
     font-size: 2rem;
     color: #5c3e29;
     text-align: left;
+    display: flex;
+    gap: 10px;
 }
 
 .logo i {
     font-size: 0.3em;
     vertical-align: top;
-    display: inline-block;
     position: relative;
 }
 
@@ -64,10 +68,13 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 20px 0;
     font-family: Arial, sans-serif;
     gap: 20px;
     border-bottom: 2px solid #5c3e29;
+    align-items: center;
+    width: 90%;
+    /* Ensure panier_menu takes up full space */
 }
 
 .panier {
@@ -121,6 +128,11 @@ html {
     justify-content: flex-end;
 }
 
+.social-icon-items {
+    display: flex;
+    gap: 10px;
+}
+
 .social-icons a {
     color: #5c3e29;
     font-size: 20px;
@@ -150,12 +162,15 @@ html {
     font-size: 16px;
     outline: none;
     appearance: none;
+    text-align: center;
 }
 
 .language-selector select option {
     background-color: #5c3e29;
     color: black;
 }
+
+
 
 /* Main content */
 .content {
@@ -193,7 +208,7 @@ p {
     padding: 50px 20px;
     border-radius: 10px;
     text-align: center;
-    width: calc(25% - 20px);
+    width: calc(20% - 20px);
     position: relative;
     font-family: 'Arial', sans-serif;
 }
