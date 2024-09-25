@@ -49,6 +49,10 @@ html {
     box-sizing: border-box;
 }
 
+.header a {
+    text-decoration: none;
+}
+
 .logo {
     font-family: 'Matura MT Script Capitals', sans-serif;
     font-size: 2rem;
