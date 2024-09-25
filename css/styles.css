@@ -50,32 +50,48 @@ html {
     font-family: 'Matura MT Script Capitals', sans-serif;
     font-size: 80px;
     color: white;
+    margin: 0px;
+    padding: 0px 0px 0 0px;
+}
+
+.titlelogo {
+    font-size: 7rem;
+    display: inline-block;
     text-align: right;
 }
 
-.text-column {
-    font-size: 7rem;
-    display: inline-block;
-}
-
-.text-column span {
+.spantitle {
     display: block;
     font-size: 1.5rem;
     margin-top: -40px;
+    text-align: end;
+    margin-right: 30px;
 }
 
-.icon-column {
+.title i {
     font-size: 0.3em;
-    vertical-align: top;
+    vertical-align: super;
+    margin-left: -20px;
     display: inline-block;
     align-self: flex-start;
     position: relative;
+}
+
+.logo img {
+    margin-top: -20px;
+    width: 300px;
+    margin-left: 60px;
+}
+
+.containerSocial {
+    margin-top: -90px;
 }
 
 /* Social icons */
 .social-icons {
     display: flex;
     gap: 30px;
+    padding-top: -30px;
 }
 
 .social-icons a {
@@ -227,16 +243,11 @@ html {
 }
 
 /* Responsive design */
-
-/* Mobile-first styles */
 @media only screen and (max-width: 767px) {
     .header {
         flex-direction: column;
-        /* Change layout to column for mobile */
         justify-content: center;
-        /* Center content */
         align-items: center;
-        /* Align items in the center */
     }
 
     .logo {
@@ -244,18 +255,33 @@ html {
         text-align: center;
     }
 
-    .text-column {
-        font-size: 3rem;
+    .titlelogo {
+        font-size: 5rem;
+        display: inline-block;
+        text-align: right;
     }
 
-    .text-column span {
+    .title i {
+        font-size: 0.3em;
+        vertical-align: super;
+        margin-left: 0px;
+        display: inline-block;
+        align-self: flex-start;
+        position: relative;
+    }
+
+    .spantitle {
         font-size: 1rem;
         margin-top: -20px;
+        margin-right: 30px;
+    }
+
+    .containerSocial {
+        margin-top: 0px;
     }
 
     .social-icons {
         flex-direction: row;
-        align-items: center;
         margin-top: 20px;
     }
 
@@ -270,6 +296,16 @@ html {
         margin-left: 0;
     }
 
+    .menu ul {
+        padding: 0;
+    }
+
+    .menu ul li {
+        font-size: 16px;
+        margin-bottom: 15px;
+        padding: 5px;
+    }
+
     .scroll-down {
         bottom: 10px;
     }
@@ -279,21 +315,23 @@ html {
     }
 }
 
-/* Tablet styles */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+/* Styles communs pour Tablet et Desktop */
+@media only screen and (min-width: 768px) {
     .logo {
         font-size: 60px;
+        /* Taille par défaut pour tablette */
     }
 
     .text-column {
         font-size: 5rem;
+        /* Taille par défaut pour tablette */
     }
 
     .text-column span {
         font-size: 1.3rem;
         margin-top: -20px;
     }
-
+    
     .social-icons a {
         font-size: 20px;
         margin: 0 15px;
@@ -309,25 +347,30 @@ html {
     }
 }
 
-/* Desktop styles */
+/* Spécifique aux Desktop */
 @media only screen and (min-width: 1024px) {
     .logo {
         font-size: 80px;
+        /* Taille augmentée pour Desktop */
     }
 
     .text-column {
         font-size: 7rem;
+        /* Taille augmentée pour Desktop */
     }
 
     .social-icons a {
         font-size: 24px;
+        /* Taille augmentée pour Desktop */
     }
 
     .menu ul li {
         font-size: 20px;
+        /* Taille augmentée pour Desktop */
     }
 
     .scroll-down i {
         font-size: 3rem;
+        /* Taille augmentée pour Desktop */
     }
 }
