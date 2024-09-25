@@ -201,7 +201,7 @@ h1 {
 
 p {
     font-size: 15px;
-    max-width: 78%;
+    max-width: 70%;
     color: #5c3e29;
     font-family: 'MyriadPro', sans-serif;
 }
@@ -225,16 +225,26 @@ p {
 }
 
 .icon {
-    font-size: 40px;
-    background-color: white;
-    color: inherit;
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 20px;
+    margin: 0 auto 10px;
+    overflow: hidden;
+    /* Pour que l'image reste à l'intérieur du cercle */
+}
+
+.icon img {
+    width: 100%;
+    /* Pour que l'image prenne toute la largeur du conteneur */
+    height: 100%;
+    /* Pour que l'image prenne toute la hauteur du conteneur */
+    object-fit: cover;
+    /* Pour que l'image reste proportionnée tout en couvrant le conteneur */
+    border-radius: 50%;
+    /* Pour donner une forme ronde à l'image */
 }
 
 .info-btn {
@@ -243,7 +253,7 @@ p {
     padding: 0px 20px;
     border-radius: 10px;
     color: white;
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin-top: 20px;
     cursor: pointer;
 }
