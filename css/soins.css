@@ -214,16 +214,16 @@ p {
 .list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
 }
 
 .card {
     color: white;
-    padding: 50px 20px;
+    padding: 20px 20px;
     border-radius: 10px;
     text-align: center;
-    width: calc(20% - 20px);
+    width: calc(17% - 20px);
     position: relative;
     font-family: 'Arial', sans-serif;
 }
