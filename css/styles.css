@@ -90,8 +90,7 @@ html {
 /* Social icons */
 .social-icons {
     display: flex;
-    gap: 30px;
-    padding-top: -30px;
+    gap: 10px;
 }
 
 .social-icons a {
@@ -331,7 +330,7 @@ html {
         font-size: 1.3rem;
         margin-top: -20px;
     }
-    
+
     .social-icons a {
         font-size: 20px;
         margin: 0 15px;
