@@ -169,9 +169,15 @@ html {
     text-align: center;
 }
 
+.language-selector:hover,
+.language-selector:hover select,
+.language-selector:hover span {
+    cursor: pointer;
+}
+
 .language-selector select option {
     background-color: #5c3e29;
-    color: black;
+    color: rgb(255, 253, 253);
 }
 
 

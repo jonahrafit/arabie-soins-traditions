@@ -90,7 +90,7 @@ html {
 /* Social icons */
 .social-icons {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .social-icons a {
