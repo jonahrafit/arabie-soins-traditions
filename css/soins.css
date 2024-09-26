@@ -286,8 +286,8 @@ p {
     z-index: -1;
 }
 .background-contact img {
-    width: 180vh;
-    height: 100vh;
+    width: 205vh;
+    height: 150vh;
     object-fit: cover;
 }
 
