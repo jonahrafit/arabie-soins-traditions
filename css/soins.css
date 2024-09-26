@@ -234,6 +234,33 @@ p {
     font-family: 'Arial', sans-serif;
 }
 
+.list-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    background-color: #83461a;
+    opacity: 0.6;
+}
+
+.card-contact {
+    color: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: calc(17% - 20px);
+    position: relative;
+    font-family: 'Arial', sans-serif;
+}
+.contact {
+	font-family: 'MyriadPro-Regular', sans-serif;
+    /* Apply the font */
+    font-size: 4rem;
+    color: #532c10;
+    text-align: center;
+    /* Change from right to left */
+    opacity: 0.6;
+}
 .icon {
     border-radius: 50%;
     width: 150px;
@@ -272,7 +299,14 @@ p {
     background-color: white;
     color: #5c3e29;
 }
-
+h2 {
+    font-size: 1.5rem;
+    font-weight: 10;
+}
+h3 {
+    font-size: 1.1rem;
+    font-weight: 10;
+}
 /* Responsive styling for mobile */
 @media only screen and (max-width: 767px) {
 
@@ -327,6 +361,10 @@ p {
     }
 
     .card {
+        width: 100%;
+        padding: 20px;
+    }
+    .card-contact {
         width: 100%;
         padding: 20px;
     }
