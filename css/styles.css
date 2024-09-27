@@ -242,6 +242,7 @@ html {
 }
 
 /* Responsive design */
+/* mobile */
 @media only screen and (max-width: 767px) {
     .header {
         flex-direction: column;
@@ -317,32 +318,34 @@ html {
 /* Styles communs pour Tablet et Desktop */
 @media only screen and (min-width: 768px) {
     .logo {
-        font-size: 60px;
-        /* Taille par défaut pour tablette */
+        font-size: 80px;
+        /* Taille augmentée pour Desktop */
     }
 
-    .text-column {
-        font-size: 5rem;
-        /* Taille par défaut pour tablette */
-    }
-
-    .text-column span {
-        font-size: 1.3rem;
-        margin-top: -20px;
+    .titlelogo {
+        font-size: 7rem;
+        /* Taille augmentée pour Desktop */
     }
 
     .social-icons a {
-        font-size: 20px;
-        margin: 0 15px;
+        font-size: 24px;
+        /* Taille augmentée pour Desktop */
+    }
+
+    .menu {
+        text-align: left;
+        width: 46%;
+        margin-left: 50px;
     }
 
     .menu ul li {
-        font-size: 18px;
-        margin-bottom: 20px;
+        font-size: 20px;
+        /* Taille augmentée pour Desktop */
     }
 
     .scroll-down i {
-        font-size: 2.5rem;
+        font-size: 3rem;
+        /* Taille augmentée pour Desktop */
     }
 }
 
@@ -353,7 +356,7 @@ html {
         /* Taille augmentée pour Desktop */
     }
 
-    .text-column {
+    .titlelogo {
         font-size: 7rem;
         /* Taille augmentée pour Desktop */
     }
