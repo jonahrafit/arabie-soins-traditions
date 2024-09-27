@@ -276,9 +276,9 @@ p {
     flex-wrap: wrap;
     gap: 50px;
     justify-content: center;
-    background-color: #83461a;
+    /*background-color: #83461a;
     background-image: url('images/background.jpg');
-    opacity: 0.6;
+    opacity: 0.6;*/
 
 }
 
@@ -310,7 +310,7 @@ p {
     font-family: 'MyriadPro-Regular', sans-serif;
     /* Apply the font */
     font-size: 4rem;
-    color: #532c10;
+    color: #b97f56;
     text-align: center;
     /* Change from right to left */
     opacity: 0.6;
@@ -363,6 +363,51 @@ h2 {
 h3 {
     font-size: 1.1rem;
     font-weight: 10;
+}
+
+.qui-sommes-nous {
+    margin-bottom: 15px;
+    margin-top: -15%;
+    margin-left: 30%;
+}
+.list-qui-sommes-nous {
+    padding-top: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    /*background-color: #804016;
+    background-image: url('images/background.jpg');
+    
+    opacity: 0.6;*/
+    
+}
+.background-qui-sommes-nous {
+    position: relative;
+    left: 0;
+    width: 50%;
+    height: 10%;
+    z-index: -1;
+    /*opacity: 0.5;*/
+}
+.background-qui-sommes-nous img {
+    width: 205vh;
+    height: 130vh;
+    object-fit: cover;
+    opacity: 2;
+}
+.background-qui-sommes-nous-text {
+    position: relative;
+    left: 0;
+    width: 20%;
+    height: 10%;
+    z-index: -1;
+}
+.background-qui-sommes-nous-text img {
+    width: 100vh;
+    height: 12vh;
+   
+    /*object-fit: cover;*/
 }
 
 /* Responsive styling for mobile */
